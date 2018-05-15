@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="serviceTest.js"></script>
+
+<body ng-app="myApp">
+
+    <div ng-controller="myController">
+
+        <p>Input something in the input box:</p>
+        <p>Name :
+            <input type="text" ng-model="name" placeholder="Enter name here">
+        </p>
+        <h1>Hello {{name}}</h1>
+
+        <p>Number 1: </p>
+        <input type="text" ng-model="number1" placeholder="Enter first number">
+        <p>Number 2: </p>
+        <input type="text" ng-model="number2" placeholder="Enter second number">
+        <button ng-click="doSum()">Sum</button>
+        <h2> Sum is : {{sum}} </h2>
+
+    </div>
+
+</body>
+
+</html>
