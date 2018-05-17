@@ -5,6 +5,8 @@
 
 <script src="app.js"></script>
 <script src="serviceTest.js"></script>
+<script src="services.js"></script>
+<script src="directives.js"></script>
 
 <body ng-app="myApp">
 
@@ -24,7 +26,8 @@
         <h2> Sum is : {{sum}} </h2>
 
         <p ng-repeat="mayor in mayors">{{mayor.name}}</p>
-
+        <my-tag info="user1"></my-tag>
+        <br>
         <a href="#!my">Click HEre</a>
     </div>
 
